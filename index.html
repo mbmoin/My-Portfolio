@@ -13,6 +13,219 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
+	
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: "Crimson Regular",Georgia,Times,"Times New Roman",serif;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #089ec7;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+         }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+         }
+
+        .topnav a.active {
+            background-color: #946B2D;
+            color: white;
+        }
+        
+        h1{
+           color: white;
+           
+        }
+        
+        h3 {
+            color: #946B2D;
+        }
+        
+        h4 {
+            color: #946B2D;
+        }
+        
+        b {
+            color: #0e1a40;
+        }
+        i{
+            color: #2b1c13;
+         }
+        
+        a {
+            color: #0e1a40;
+        }
+        
+        a:visited {
+            color: #0e1a40;
+        }
+        
+        caption {
+            color: #2b1c13;
+        }
+        
+        table, th, td {
+          border: 1px solid black;
+        }
+        
+        .tablestyle {
+            text-align: middle;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #089ec7;
+            width: 75%;
+            border: 2px solid #330033;
+            caption-side: top;
+            margin-bottom: 30px;
+        }
+        
+        .tableholder {
+            color: #FFFFFF;
+            background-color: #0d6585;
+        }
+        
+        div#header,
+        div#footer {
+            padding: 10px;
+            color: white;
+            background-color: #0e1a40;
+        }
+
+
+
+      #container{
+	width:800px;
+	margin:50px auto;
+	padding: 20px;
+	width:50%;
+        
+}
+#container h2{
+	text-align:center;
+	color:#045;
+}
+
+#quoteContainer{
+	width:75%;
+	padding:40px;
+	margin:20px auto;
+	text-align: center;
+        height:70px;
+        border: 5px solid #0e1a40;
+        font-size: 18px;
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+.button{
+    background-color: #f44336; /* Red */ 
+    border: solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+.button1 {background-color: #008CBA;} /* Blue */
+.button2 {background-color: #4CAF50;} /* Green */    
+.button3 {background-color: #DAA520;} /* Yellow */
+
+
+    </style>
+
+
+<script type="text/javascript">
+
+
+var sor = [
+  "A creative man is motivated by the desire to achieve, not by the desire to beat others.-Ayn Rand",
+  "Expect problems and eat them for breakfast. -Alfred A. Montapert",
+  "Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe. -Albert Einstein",
+  "Logic will get you from A to B. Imagination will take you everywhere.  -Albert Einstein",
+  "You must be the change you wish to see in the world. -Mahatma Gandhi", 
+  "Among those whom I like or admire, I can find no common denominator, but among those whom I love, I can: all of them make me laugh. -W. H. Auden",
+  "In three words I can sum up everything I've learned about life: it goes on. -Robert Frost",
+  "I love sleep. My life has the tendency to fall apart when I'm awake, you know? -Ernest Hemingway",
+  "It's much better to do good in a way that no one knows anything about it. -Leo Tolstoy",
+  "I don't love studying. I hate studying. I like learning. Learning is beautiful. - Natalie Portman",
+  "When nothing is sure, everything is possible. -Margaret Drabble",
+  "We ourselves feel that what we are doing is just a drop in the ocean. But the ocean would be less because of that missing drop. -Mother Teresa",
+  "Faith is taking the first step even when you don't see the whole staircase. -Martin Luther King Jr.",
+  "Be less curious about people and more curious about ideas. -Marie Curie.",
+  "The less you reveal, the more people can wonder. -Emma Watson",
+  "The more you know who you are, and what you want, the less you let things upset you. ? Stephanie Perkins",
+  "***A Last note from your narrator***\n I am haunted by humans.? Markus Zusak",
+  "And that's the thing about people who mean everything they say. They think everyone else does too. ? Khaled Hosseini",
+  "Most folks are about as happy as they make up their minds to be. -Abraham Lincoln"
+
+];
+
+
+
+
+function newQuote1(){
+var randomNumber = Math.floor(Math.random() * (sor.length-1));
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteContainer').style.backgroundColor = "#ae0001";
+document.getElementById('quoteContainer').style.borderColor = "#740001";
+document.getElementById('quoteContainer').style.color = "#d3a625";
+document.getElementById('quoteContainer').style.fontFamily = "Times New Roman";
+}
+
+
+function newQuote2(){
+var randomNumber = Math.floor(Math.random() * (sor.length-1));
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteContainer').style.backgroundColor = "#008CBA";
+document.getElementById('quoteContainer').style.borderColor = "#5d5d5d";
+document.getElementById('quoteContainer').style.color = "#2b1c13";
+document.getElementById('quoteContainer').style.fontFamily = "Georgia";
+}
+
+function newQuote3(){
+var randomNumber = Math.floor(Math.random() * (sor.length-1));
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteContainer').style.backgroundColor = "#2a623d";
+document.getElementById('quoteContainer').style.borderColor = "#1a472a";
+document.getElementById('quoteContainer').style.color = "#aaaaaa";
+document.getElementById('quoteContainer').style.fontFamily = "Arial";
+}
+
+function newQuote4(){
+var randomNumber = Math.floor(Math.random() * (sor.length-1));
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteDisplay').innerHTML = sor[randomNumber];
+document.getElementById('quoteContainer').style.backgroundColor = "#f0c75e";
+document.getElementById('quoteContainer').style.borderColor = "#ecb939";
+document.getElementById('quoteContainer').style.color = "#372e29";
+document.getElementById('quoteContainer').style.fontFamily = "Verdana";
+}
+
+</script>	
 
 <body>
     <div id="mobile-menu-open" class="shadow-large">
@@ -414,9 +627,30 @@
     </div>		    
     <div id="blog"></div>		    
 		    
-    <div id="contact"></div>
+    <div id="skills">
+         <h2 class="heading">Interests</h2>
+	 <p>Apart from studies, I enjoy drawing, arts and crafts, <a href="https://www.goodreads.com/mbmoin" target="_blank" rel="noreferrer noopener">reading</a>,
+	    travelling, trying new recipes and watching youtube  </p>	    
+    </div>		    
+    <div id="blog"></div>	
 		    
-    		    
+     <div id="container">
+		<h2>Get Your Daily Quote</h2>
+			<div id="quoteContainer">
+				<p></p>
+                                <p id="quoteDisplay"></p>
+                                			
+			</div>
+
+                   
+  <div id="buttonContainer">
+  <button onclick="newQuote1();" class="button">Red</button>
+  <button onclick="newQuote2();" class="button button1">Blue</button></br>
+  <button onclick="newQuote3();" class="button button2">Green</button>
+  <button onclick="newQuote4();" class="button button3">Yellow</button></br>
+  </div>
+		    
+	<div id="contact"></div>	    
 		    
 
  <footer>
