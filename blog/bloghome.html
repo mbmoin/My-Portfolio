@@ -25,8 +25,7 @@
         <div class="col-md-12">
 
           <!-- First Blog Post -->
-          <h2 class="post-title">Paper Summary: Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges</h2>
-		<h3>Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, and Chudi Zhong</h3>	
+          <h2 class="post-title">Paper Summary: Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges</h2>
           <p class="lead">
             by Maisha
           </p>
@@ -88,7 +87,7 @@
                                   10.2 Under what assumptions does there exist an interpretable policy that is as accurate as the more complicated black-box model?
 		                  10.3 Can we simplify or interpret the state space?</p>
 
-          <p>Paper available at<a href = "https://arxiv.org/abs/2103.11251" target="_blank">ArXiv</a></p>
+          <p>Paper available at <a href = "https://arxiv.org/abs/2103.11251" target="_blank">ArXiv</a></p>
 
           <hr>
 
@@ -100,17 +99,19 @@
           <p><span class="glyphicon glyphicon-time"></span>Posted on November 25, 2021 at 11:00 AM</p>
           <p>Infrastructure as code (IaC) scripts help companies to automatically provision and configure their development environment, deployment environment, and servers. However, while developing IaC scripts practitioners may unintentionally introduce security smells. Thus, motivating Rahman et al. to conduct an empirical study to help practitioners avoid insecure coding practices while developing IaC scripts.
              The qualitative analysis of 1,726 Puppet scripts helped identify the seven security smells, which are:
-             - Admin by default
-             - Empty password
-             - Hard-coded secret
-             - Invalid IP address binding
-             - Suspicious comment
-             - Use of HTTP without TLS
-             - Use of weak cryptography algorithms
+	<ul>	  
+		<li>Admin by default</li>
+                <li>Empty password</li>
+                <li>Hard-coded secret</li>
+                <li>Invalid IP address binding</li>
+                <li>Suspicious comment</li>
+                <li>Use of HTTP without TLS</li>
+                <li>Use of weak cryptography algorithms</li>
+	</ul>
             Their findings show that among the identified 21,201 occurrences of security smells the most commonly occurring security smell is hard-coded secret (1,326 occurrences), in order to mitigate the occurrence of this security smell they recommended the use of Vault to store secrets or scanning the scripts using tools like CredScan. The authors have also suggested strategies to mitigate the other security smells as well.
             They have also observed that security smells can persist in a script for as long as 98 months. The lack of awareness and difference in perception in regards to the existing security smells in IaC script can be two possible explanation for such a lengthy lifetime of security smells.</p>
           
-          <p>Paper available at<a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>   
+          <p>Paper available at <a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>   
           <hr>
 
           <!-- Third Blog Post -->
@@ -120,17 +121,26 @@
           </p>
           <p><span class="glyphicon glyphicon-time"></span> Posted on November 25, 2021 at 10:45 AM</p>
           <p>Infrastructure as code (IaC) scripts help companies to automatically provision and configure their development environment, deployment environment, and servers. However, while developing IaC scripts practitioners may inadvertently introduce security smells. In this paper, an empirical study of security smells in IaC scripts has been conducted in order to help practitioners avoid insecure coding practices while developing IaC scripts. Firstly, a qualitative analysis of 1,726 IaC scripts determined the seven security smells discussed in the paper. The authors implemented a static analysis tool called Security Linter for Infrastructure as Code scripts (SLIC) to automatically identify the occurrence of each smell from 15,232 IaC scripts collected by mining open source software repositories from four well-known sources (Mozilla, Open Stack, Wikimedia Commons, GitHub). The authors have then calculated the smell density and lifetime of the smell occurrences and submitted bug reports for 1000 randomly selected smell occurrences to assess the relevance of the identified security smells.
-Strengths:
-• The paper is very well structured and organized. The practical examples on the significance of IaC scripts in terms of motivating this work are very strong. The example figures are well annotated which make them easy to understand and follow.
-• Previous studies related to security smells are largely centered around other domains (i.e. Android, Java etc.), whereas this paper is focused on security smells found in IaC scripts which provision servers and development environments, thus making them important to investigate for security smells.
-• The seven determined security smells have been mapped to Common Weakness Enumerator (CWE) definitions, their frequency and lifetime along with practitioner agreement has been observed. The authors have also included a section that discusses the strategies to address each of the security smells.
-Weaknesses:
-• Conclusion validity, as major significant aspects of this paper depend heavily on subjective judgement, even though Cohen’s Kappa score has been observed for each instance it is still a limitation.
-• The static analysis tool SLIC takes a rule-based approach to detect security smells which can generate false positives and negatives.
-• The findings may not be generalizable as there can be more existing types of security smells and there remains a notable difference in practitioner perception of security smells given the context of the security smells.
+Strengths:<ul>
+<li> The paper is very well structured and organized. The practical examples on the significance of IaC scripts in terms of motivating this work are very strong.
+	The example figures are well annotated which make them easy to understand and follow.</li>
+<li> Previous studies related to security smells are largely centered around other domains (i.e. Android, Java etc.), 
+	whereas this paper is focused on security smells found in IaC scripts which provision servers and development environments,
+	thus making them important to investigate for security smells.</li>
+<li> The seven determined security smells have been mapped to Common Weakness Enumerator (CWE) definitions, 
+	their frequency and lifetime along with practitioner agreement has been observed. 
+	The authors have also included a section that discusses the strategies to address each of the security smells.</li>
+		</ul>
+Weaknesses:<ul>
+<li> Conclusion validity, as major significant aspects of this paper depend heavily on subjective judgement, 
+	even though Cohen’s Kappa score has been observed for each instance it is still a limitation.</li>
+<li> The static analysis tool SLIC takes a rule-based approach to detect security smells which can generate false positives and negatives.</li>
+<li> The findings may not be generalizable as there can be more existing types of security smells and there remains a notable difference
+	in practitioner perception of security smells given the context of the security smells.</li>
+		</ul>		
           </p>
           
-          <p>Paper available at<a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>
+          <p>Paper available at <a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>
           <hr>
 
           <!-- Pager -->
