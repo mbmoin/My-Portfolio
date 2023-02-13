@@ -24,103 +24,8 @@
         <!-- Blog Entries Column -->
         <div class="col-md-12">
 
+
           <!-- First Blog Post -->
-          <h2 class="post-title">Paper Summary: Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges</h2>
-          <p class="lead">
-            by Maisha
-          </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on March 8, 2022 at 9:00 AM</p>
-          <p>Interpretable Machine Learning:<ul> 
-		<li>Models which are constrained so that their reasoning processes are more understandable.</li> 
-		<li>Much easier to troubleshoot and to use in practice.</li></ul></p>
-
-	  <p>General Principles:<ol>
-		  <li> An interpretable machine learning model obeys a domain-specific set of constraints to allow it to be more easily understood by humans. 
-			  These constraints can differ dramatically depending on the domain.</li>
-		  <li> Interpretable models do not necessarily create or enable trust – they could also enable distrust. They simply allow users to decide whether to trust them. 
-			  In other words, they permit a decision of trust, rather than trust itself.</li>
-		  <li> It is important not to assume that one needs to make a sacrifice in accuracy in order to gain interpretability.
-			  Interpretability versus accuracy is a false dichotomy in machine learning.</li>
-                  <li> As part of the full data science process, one should expect both the performance metric and interpretability metric to be iteratively refined.</li>
-                  <li> For high stakes decisions, interpretable models should be used if possible, rather than “explained” black box models.</li></p>
-          </ol>
-          <p>Ten Grand Challenges:<ol>
-		  <li> Sparse Logical Models: Logical models are among the most popular algorithms for interpretable machine learning, since their statements provide human-understandable reasons for each prediction
-                     Challenges: <ul> <li>Can we improve the scalability of optimal sparse decision trees?</li>
-	                              <li> Can we efficiently handle continuous variables?</li>
-	                              <li> Can we handle constraints more gracefully?</li>
-	                         </ul>
-		  <li>Scoring Systems: Scoring systems are linear classification models that require users to add, subtract, and multiply only a few small numbers in order to make a prediction
-			  Challenges: <ul> <li> Improving the scalability of optimal sparse scoring systems</li>
-	                                   <li> Ease of constraint elicitation and handling </li></ul>
-	          </li> 
-		  <li> Generalized Additive Models: Generalized additive models (GAMs) were introduced to present a flexible extension of generalized linear models (GLMs), allowing for arbitrary functions for modeling the influence of each feature on a response.
-                     Challenges: <ul><li>How to control the simplicity and interpretability for GAMs?</li>
-	                             <li>How to use GAMs to troubleshoot complex datasets?</li>
-	                         </ul>
-	          </li>
-		  <li> Modern case-based reasoning: Case-based reasoning is a paradigm that involves solving a new problem using known solutions to similar past problems
-                     Challenges: <ul>
-			         <li>How to extend the existing case-based reasoning approach to handling more complex data, such as video?</li>
-                                 <li>How to integrate prior knowledge or human supervision into prototype learning?</li>
-                                 <li>How to troubleshoot a trained prototype-based model to improve the quality of prototypes?</li>
-			         </ul>
-                  </li>
-		  <li> Complete supervised disentanglement of neural networks: “Disentanglement” here refers to the way information travels through the network
-		     Challenges: <ul>
-                                 <li>How to make a whole layer of a DNN interpretable?</li>
-                                 <li>How to disentangle all neurons of a DNN simultaneously?</li>
-                                 <li>How to choose good concepts to learn for disentanglement?</li>
-                                 <li>How to make the mapping from the disentangled layer to the output layer interpretable?</li>
-                                 </ul>
-                  </li>
-		  <li> Unsupervised disentanglement of neural networks: The major motivation of unsupervised disentanglement is the same as Challenge 5, i.e., making information flow through the network easier to understand and interact with.
-                     Challenges: <ul>
-                                 <li> How to quantitatively evaluate unsupervised disentanglement?</li>
-                                 <li> How to adapt neural network architectures designed with compositional constraints to other domains?</li>
-                                 <li> How to learn part-whole disentanglement for more complicated patterns in large vision datasets?</li>
-                                 </ul>
-                  </li>
-		  <li> Dimension Reduction for Data Visualization: Dimension reduction (DR) techniques take, as input, high-dimensional
-			  data and project it down to a lower-dimensional space (usually 2D or 3D) so that a human can better comprehend it.
-                     Challenges: <ul>
-                                 <li>How to capture information from the high dimensional space more accurately?</li>
-                                 <li>How should we select hyperparameters for DR?</li>
-                                 <li>Can the DR transformation from high- to low-dimensions be made more interpretable or explainable?</li>
-                                 </ul>
-                  </li>
-		  <li> Machine learning models that incorporate physics and other generative or causal constraints: These models are not purely data-driven instead, these models are trained to observe physical laws, often in the form of ordinary (ODEs) and partial differential equations (PDEs).
-                     Challenges: <ul>
-                                 <li>How to improve training of a PINN?</li>
-                                 <li>How do we combine PINNs with optimal experimental/simulation design to quickly reduce uncertainty in 
-					 approximating physical models?</li>
-                                 <li>Are there other ways of incorporating PDE (or other) constraints into models other than neural networks?</li> 
-                                 </ul>
-                  </li>
-		  <li> Characterization of the “Rashomon” set of good models: In many practical machine learning problems, there is a multiplicity of almost-equally-accurate models. This set of high performing models is called the Rashomon set, based on an observation of the Rashomon effect by the statistician Leo Breiman. We need ways to explore the Rashomon set, particularly if we are interested in model interpretability
-                     Challenges: <ul>
-			         <li>How can we characterize the Rashomon set?
-                                   (a) What is a good space in which to measure the size of the Rashomon set? What is a good measure of the size of the Rashomon set?
-                                   (b) Are there approximation algorithms or other techniques that will allow us 
-					 to efficiently compute or approximate the size of the Rashomon set?</li>
-                                <li>What techniques can be used to visualize the Rashomon set?</li>
-                                <li>What model to choose from the Rashomon set?</li>
-                                 </ul>
-                  </li>
-		  <li> Interpretable reinforcement learning: In RL, a learning agent interacts with the environment by a trial and error process, receiving signals (rewards) for the actions it takes.In deep RL typically the policies are essentially impossible to understand or trust. One natural way to include interpretability in a RL system is by representing the policy or value function by a decision tree or rule list But there are currently no general interpretable well-performing methods for deep RL that allow transparency in the agent’s actions or intent.
-                      Challenges: <ul>
-                                  <li>What constraints would lead to an accurate interpretable policy?</li>
-                                  <li>Under what assumptions does there exist an interpretable policy that is as accurate as the more complicated black-box model?</li>
-                                  <li>Can we simplify or interpret the state space?</li>
-                              </ul>
-                  </li>
-          </p>
-          </ol>
-          <p>Paper available at <a href = "https://arxiv.org/abs/2103.11251" target="_blank">ArXiv</a></p>
-
-          <hr>
-
-          <!-- Second Blog Post -->
           <h2 class="post-title">Practitioner Summary: The Seven Sins: Security Smells in Infrastructure as Code Scripts</h2>
           <p class="lead">
             by Maisha
@@ -151,7 +56,7 @@
           <p>Paper available at <a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>   
           <hr>
 
-          <!-- Third Blog Post -->
+          <!-- Second Blog Post -->
           <h2 class="post-title">Paper Review: The Seven Sins: Security Smells in Infrastructure as Code Scripts</h2>
           <p class="lead">
             by Maisha
@@ -179,6 +84,118 @@ Weaknesses:<ul>
           </p>
           
           <p>Paper available at <a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>
+          <hr>
+	    
+	    
+          <!-- Third Blog Post -->
+          <h2 class="post-title">Paper Summary: Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges</h2>
+          <p class="lead">
+            by Maisha
+          </p>
+          <p><span class="glyphicon glyphicon-time"></span> Posted on March 8, 2022 at 9:00 AM</p>
+          <p>Interpretable Machine Learning:<ul> 
+		<li>Models which are constrained so that their reasoning processes are more understandable.</li> 
+		<li>Much easier to troubleshoot and to use in practice.</li></ul></p>
+
+	  <p>General Principles:<ol>
+		  <li> An interpretable machine learning model obeys a domain-specific set of constraints to allow it to be more easily understood by humans. 
+			  These constraints can differ dramatically depending on the domain.</li>
+		  <li> Interpretable models do not necessarily create or enable trust – they could also enable distrust. They simply allow users to decide whether to trust them. 
+			  In other words, they permit a decision of trust, rather than trust itself.</li>
+		  <li> It is important not to assume that one needs to make a sacrifice in accuracy in order to gain interpretability.
+			  Interpretability versus accuracy is a false dichotomy in machine learning.</li>
+                  <li> As part of the full data science process, one should expect both the performance metric and interpretability metric to be iteratively refined.</li>
+                  <li> For high stakes decisions, interpretable models should be used if possible, rather than “explained” black box models.</li></p>
+          </ol>
+          <p>Ten Grand Challenges:<ol>
+		  <li> Sparse Logical Models: Logical models are among the most popular algorithms for interpretable machine learning, 
+			  since their statements provide human-understandable reasons for each prediction
+                 <p>Challenges: <ul> <li>Can we improve the scalability of optimal sparse decision trees?</li>
+	                              <li> Can we efficiently handle continuous variables?</li>
+	                              <li> Can we handle constraints more gracefully?</li>
+	                         </ul><p>
+		  <li>Scoring Systems: Scoring systems are linear classification models that require users to add, subtract, 
+			  and multiply only a few small numbers in order to make a prediction.
+			  <p>Challenges: <ul> <li> Improving the scalability of optimal sparse scoring systems</li>
+			  <li> Ease of constraint elicitation and handling </li></ul></p>
+	          </li> 
+		  <li> Generalized Additive Models: Generalized additive models (GAMs) were introduced to present a 
+			  flexible extension of generalized linear models (GLMs), allowing for arbitrary functions 
+			  for modeling the influence of each feature on a response.
+                     <p>Challenges: <ul><li>How to control the simplicity and interpretability for GAMs?</li>
+	                             <li>How to use GAMs to troubleshoot complex datasets?</li>
+			  </ul></p>
+	          </li>
+		  <li> Modern case-based reasoning: Case-based reasoning is a paradigm that involves solving a new problem 
+			  using known solutions to similar past problems.
+                     <p>Challenges: <ul>
+			         <li>How to extend the existing case-based reasoning approach to handling more complex data, such as video?</li>
+                                 <li>How to integrate prior knowledge or human supervision into prototype learning?</li>
+                                 <li>How to troubleshoot a trained prototype-based model to improve the quality of prototypes?</li>
+			  </ul></p>
+                  </li>
+		  <li> Complete supervised disentanglement of neural networks: “Disentanglement” here refers to the way information travels through the network.
+		     <p>Challenges: <ul>
+                                 <li>How to make a whole layer of a DNN interpretable?</li>
+                                 <li>How to disentangle all neurons of a DNN simultaneously?</li>
+                                 <li>How to choose good concepts to learn for disentanglement?</li>
+                                 <li>How to make the mapping from the disentangled layer to the output layer interpretable?</li>
+			  </ul></p>
+                  </li>
+		  <li> Unsupervised disentanglement of neural networks: The major motivation of unsupervised disentanglement is the same as Challenge 5,
+			  i.e., making information flow through the network easier to understand and interact with.
+                     <p>Challenges: <ul>
+                                 <li> How to quantitatively evaluate unsupervised disentanglement?</li>
+                                 <li> How to adapt neural network architectures designed with compositional constraints to other domains?</li>
+                                 <li> How to learn part-whole disentanglement for more complicated patterns in large vision datasets?</li>
+			  </ul></p>
+                  </li>
+		  <li> Dimension Reduction for Data Visualization: Dimension reduction (DR) techniques take, as input, high-dimensional
+			  data and project it down to a lower-dimensional space (usually 2D or 3D) so that a human can better comprehend it.
+                     <p>Challenges: <ul>
+                                 <li>How to capture information from the high dimensional space more accurately?</li>
+                                 <li>How should we select hyperparameters for DR?</li>
+                                 <li>Can the DR transformation from high- to low-dimensions be made more interpretable or explainable?</li>
+			  </ul></p>
+                  </li>
+		  <li> Machine learning models that incorporate physics and other generative or causal constraints: These models
+			  are not purely data-driven instead, these models are trained to observe physical laws, often in the form of
+			  ordinary (ODEs) and partial differential equations (PDEs).
+                     <p>Challenges: <ul>
+                                 <li>How to improve training of a PINN?</li>
+                                 <li>How do we combine PINNs with optimal experimental/simulation design to quickly reduce uncertainty in 
+					 approximating physical models?</li>
+                                 <li>Are there other ways of incorporating PDE (or other) constraints into models other than neural networks?</li> 
+			  </ul></p>
+                  </li>
+		  <li> Characterization of the “Rashomon” set of good models: In many practical machine learning problems, 
+			  there is a multiplicity of almost-equally-accurate models. This set of high performing models is called the Rashomon set
+			  , based on an observation of the Rashomon effect by the statistician Leo Breiman. We need ways to explore the Rashomon set,
+			  particularly if we are interested in model interpretability.
+                     <p>Challenges: <ul>
+			         <li>How can we characterize the Rashomon set?
+                                   (a) What is a good space in which to measure the size of the Rashomon set? What is a good measure of the size of the Rashomon set?
+                                   (b) Are there approximation algorithms or other techniques that will allow us 
+					 to efficiently compute or approximate the size of the Rashomon set?</li>
+                                <li>What techniques can be used to visualize the Rashomon set?</li>
+                                <li>What model to choose from the Rashomon set?</li>
+			  </ul></p>
+                  </li>
+		  <li> Interpretable reinforcement learning: In RL, a learning agent interacts with the environment by a trial and error process,
+			  receiving signals (rewards) for the actions it takes.In deep RL typically the policies are essentially
+			  impossible to understand or trust. One natural way to include interpretability in a RL system is by representing the policy 
+			  or value function by a decision tree or rule list But there are currently
+			  no general interpretable well-performing methods for deep RL that allow transparency in the agent’s actions or intent.
+                      <p>Challenges: <ul>
+                                  <li>What constraints would lead to an accurate interpretable policy?</li>
+                                  <li>Under what assumptions does there exist an interpretable policy that is as accurate as the more complicated black-box model?</li>
+                                  <li>Can we simplify or interpret the state space?</li>
+			  </ul></p>
+                  </li>
+          </p>
+          </ol>
+          <p>Paper available at <a href = "https://arxiv.org/abs/2103.11251" target="_blank">ArXiv</a></p>
+
           <hr>
 
           <!-- Pager -->
