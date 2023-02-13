@@ -25,36 +25,112 @@
         <div class="col-md-12">
 
           <!-- First Blog Post -->
-          <h2 class="post-title">Blog Post Title</h2>
+          <h2 class="post-title">Paper Summary: Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges</h2>
+		<h3>Cynthia Rudin, Chaofan Chen, Zhi Chen, Haiyang Huang, Lesia Semenova, and Chudi Zhong</h3>	
           <p class="lead">
             by Maisha
           </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2016 at 10:00 PM</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-          
+          <p><span class="glyphicon glyphicon-time"></span> Posted on March 8, 2022 at 9:00 AM</p>
+          <p>Interpretable Machine Learning: 
+		  - Models which are constrained so that their reasoning processes are more understandable 
+		  - Much easier to troubleshoot and to use in practice.</p>
+
+	  <p>General Principles:
+		  1. An interpretable machine learning model obeys a domain-specific set of constraints to allow it to be more easily understood by humans. 
+                     These constraints can differ dramatically depending on the domain.
+		  2. Interpretable models do not necessarily create or enable trust – they could also enable distrust. They simply allow users to decide whether to trust them. 
+                     In other words, they permit a decision of trust, rather than trust itself.
+		  3. It is important not to assume that one needs to make a sacrifice in accuracy in order to gain interpretability.
+		     Interpretability versus accuracy is a false dichotomy in machine learning.
+                  4. As part of the full data science process, one should expect both the performance metric and interpretability metric to be iteratively refined.
+                  5. For high stakes decisions, interpretable models should be used if possible, rather than “explained” black box models.</p>
+
+          <p>Ten Grand Challenges:
+		  1. Sparse Logical Models: Logical models are among the most popular algorithms for interpretable machine learning, since their statements provide human-understandable reasons for each prediction
+                     Challenges: 1.1 Can we improve the scalability of optimal sparse decision trees?
+                                 1.2 Can we efficiently handle continuous variables?
+                                 1.3 Can we handle constraints more gracefully?
+		  2. Scoring Systems: Scoring systems are linear classification models that require users to add, subtract, and multiply only a few small numbers in order to make a prediction
+                     Challenges: 2.1 Improving the scalability of optimal sparse scoring systems
+                                 2.2 Ease of constraint elicitation and handling
+		  3. Generalized Additive Models: Generalized additive models (GAMs) were introduced to present a flexible extension of generalized linear models (GLMs), allowing for arbitrary functions for modeling the influence of each feature on a response.
+                     Challenges: 3.1 How to control the simplicity and interpretability for GAMs?
+                                 3.2 How to use GAMs to troubleshoot complex datasets?
+		  4. Modern case-based reasoning: Case-based reasoning is a paradigm that involves solving a new problem using known solutions to similar past problems
+                     Challenges: 4.1 How to extend the existing case-based reasoning approach to handling more complex data, such as video?
+                                 4.2 How to integrate prior knowledge or human supervision into prototype learning?
+                                 4.3 How to troubleshoot a trained prototype-based model to improve the quality of prototypes?
+		  5. Complete supervised disentanglement of neural networks: “Disentanglement” here refers to the way information travels through the network
+		     Challenges: 5.1 How to make a whole layer of a DNN interpretable?
+                                 5.2 How to disentangle all neurons of a DNN simultaneously?
+                                 5.3 How to choose good concepts to learn for disentanglement?
+                                 5.4 How to make the mapping from the disentangled layer to the output layer interpretable?
+		  6. Unsupervised disentanglement of neural networks: The major motivation of unsupervised disentanglement is the same as Challenge 5, i.e., making information flow through the network easier to understand and interact with.
+                     Challenges: 6.1 How to quantitatively evaluate unsupervised disentanglement?
+                                 6.2 How to adapt neural network architectures designed with compositional constraints to other domains?
+                                 6.3 How to learn part-whole disentanglement for more complicated patterns in large vision datasets?
+		  7. Dimension Reduction for Data Visualization: Dimension reduction (DR) techniques take, as input, high-dimensional data and project it down to a lower-dimensional space (usually 2D or 3D) so that a human can better comprehend it.
+                     Challenges: 7.1 How to capture information from the high dimensional space more accurately?
+                                 7.2 How should we select hyperparameters for DR?
+                                 7.3 Can the DR transformation from high- to low-dimensions be made more interpretable or explainable?
+		  8. Machine learning models that incorporate physics and other generative or causal constraints: These models are not purely data-driven instead, these models are trained to observe physical laws, often in the form of ordinary (ODEs) and partial differential equations (PDEs).
+                     Challenges: 8.1 How to improve training of a PINN?
+                                 8.2 How do we combine PINNs with optimal experimental/simulation design to quickly reduce uncertainty in approximating physical models?
+                                 8.3 Are there other ways of incorporating PDE (or other) constraints into models other than neural networks?
+		  9. Characterization of the “Rashomon” set of good models: In many practical machine learning problems, there is a multiplicity of almost-equally-accurate models. This set of high performing models is called the Rashomon set, based on an observation of the Rashomon effect by the statistician Leo Breiman. We need ways to explore the Rashomon set, particularly if we are interested in model interpretability
+                     Challenges: 9.1 How can we characterize the Rashomon set?
+                                   (a) What is a good space in which to measure the size of the Rashomon set?    What is a good measure of the size of the Rashomon set?
+                                   (b) Are there approximation algorithms or other techniques that will allow us to efficiently compute or approximate the size of the Rashomon set?
+                                 9.2 What techniques can be used to visualize the Rashomon set?
+                                 9.3 What model to choose from the Rashomon set? 
+		  10. Interpretable reinforcement learning: In RL, a learning agent interacts with the environment by a trial and error process, receiving signals (rewards) for the actions it takes.In deep RL typically the policies are essentially impossible to understand or trust. One natural way to include interpretability in a RL system is by representing the policy or value function by a decision tree or rule list But there are currently no general interpretable well-performing methods for deep RL that allow transparency in the agent’s actions or intent.
+                      Challenges: 10.1 What constraints would lead to an accurate interpretable policy?
+                                  10.2 Under what assumptions does there exist an interpretable policy that is as accurate as the more complicated black-box model?
+		                  10.3 Can we simplify or interpret the state space?</p>
+
+          <p>Paper available at<a href = "https://arxiv.org/abs/2103.11251" target="_blank">ArXiv</a></p>
 
           <hr>
 
           <!-- Second Blog Post -->
-          <h2 class="post-title">Blog Post Title</h2>
+          <h2 class="post-title">Practitioner Summary: The Seven Sins: Security Smells in Infrastructure as Code Scripts</h2>
           <p class="lead">
             by Maisha
           </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2016 at 10:45 PM</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
+          <p><span class="glyphicon glyphicon-time"></span>Posted on November 25, 2021 at 11:00 AM</p>
+          <p>Infrastructure as code (IaC) scripts help companies to automatically provision and configure their development environment, deployment environment, and servers. However, while developing IaC scripts practitioners may unintentionally introduce security smells. Thus, motivating Rahman et al. to conduct an empirical study to help practitioners avoid insecure coding practices while developing IaC scripts.
+             The qualitative analysis of 1,726 Puppet scripts helped identify the seven security smells, which are:
+             - Admin by default
+             - Empty password
+             - Hard-coded secret
+             - Invalid IP address binding
+             - Suspicious comment
+             - Use of HTTP without TLS
+             - Use of weak cryptography algorithms
+            Their findings show that among the identified 21,201 occurrences of security smells the most commonly occurring security smell is hard-coded secret (1,326 occurrences), in order to mitigate the occurrence of this security smell they recommended the use of Vault to store secrets or scanning the scripts using tools like CredScan. The authors have also suggested strategies to mitigate the other security smells as well.
+            They have also observed that security smells can persist in a script for as long as 98 months. The lack of awareness and difference in perception in regards to the existing security smells in IaC script can be two possible explanation for such a lengthy lifetime of security smells.</p>
           
-
+          <p>Paper available at<a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>   
           <hr>
 
           <!-- Third Blog Post -->
-          <h2 class="post-title">Blog Post Title</h2>
+          <h2 class="post-title">Paper Review: The Seven Sins: Security Smells in Infrastructure as Code Scripts</h2>
           <p class="lead">
             by Maisha
           </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2016 at 10:45 PM</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
+          <p><span class="glyphicon glyphicon-time"></span> Posted on November 25, 2021 at 10:45 AM</p>
+          <p>Infrastructure as code (IaC) scripts help companies to automatically provision and configure their development environment, deployment environment, and servers. However, while developing IaC scripts practitioners may inadvertently introduce security smells. In this paper, an empirical study of security smells in IaC scripts has been conducted in order to help practitioners avoid insecure coding practices while developing IaC scripts. Firstly, a qualitative analysis of 1,726 IaC scripts determined the seven security smells discussed in the paper. The authors implemented a static analysis tool called Security Linter for Infrastructure as Code scripts (SLIC) to automatically identify the occurrence of each smell from 15,232 IaC scripts collected by mining open source software repositories from four well-known sources (Mozilla, Open Stack, Wikimedia Commons, GitHub). The authors have then calculated the smell density and lifetime of the smell occurrences and submitted bug reports for 1000 randomly selected smell occurrences to assess the relevance of the identified security smells.
+Strengths:
+• The paper is very well structured and organized. The practical examples on the significance of IaC scripts in terms of motivating this work are very strong. The example figures are well annotated which make them easy to understand and follow.
+• Previous studies related to security smells are largely centered around other domains (i.e. Android, Java etc.), whereas this paper is focused on security smells found in IaC scripts which provision servers and development environments, thus making them important to investigate for security smells.
+• The seven determined security smells have been mapped to Common Weakness Enumerator (CWE) definitions, their frequency and lifetime along with practitioner agreement has been observed. The authors have also included a section that discusses the strategies to address each of the security smells.
+Weaknesses:
+• Conclusion validity, as major significant aspects of this paper depend heavily on subjective judgement, even though Cohen’s Kappa score has been observed for each instance it is still a limitation.
+• The static analysis tool SLIC takes a rule-based approach to detect security smells which can generate false positives and negatives.
+• The findings may not be generalizable as there can be more existing types of security smells and there remains a notable difference in practitioner perception of security smells given the context of the security smells.
+          </p>
           
-
+          <p>Paper available at<a href = "https://ieeexplore.ieee.org/document/8812041" target="_blank">IEEEXplore</a></p>
           <hr>
 
           <!-- Pager -->
